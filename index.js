@@ -16,7 +16,7 @@ inquirer
   .then((answers) => {
     const url = answers.URL;
     var qr_svg = qr.image(url);
-    qr_svg.pipe(fs.createWriteStream('Hololive_introduction_Expo2024.png'));
+    qr_svg.pipe(fs.createWriteStream('name.png'));
 
     fs.writeFile('URL.txt', url, (err) => {
         if (err) throw err;
